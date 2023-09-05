@@ -30,10 +30,12 @@
     display: inline-flex;
   }
 
-  .preview {
+  .previmg {
     width: 400px;
-    height: 400px;
     background-color: blue;
+    width: 400px; 
+    height: 400px; 
+    object-fit: cover;
   }
 
   .summaryText {
@@ -57,4 +59,110 @@
     padding-top: 3%;
     padding-bottom: 7%;
     margin: -10px;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .previmg {
+      width: 200px;
+      height: 200px;
+    }
+    .summaryText {
+      text-align: center;
+    }
+
+    .summary{
+      display: block;
+      text-align: center;
+    }
+    
+    .header-content
+    {
+      text-align: center;
+    }
+
+    .project .projpix {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .project .projpix .item {
+      background: lightgray;
+      border: 1px solid black;
+      margin: 20px;
+    }
+  
+    .item {
+      border: 10px;
+      width: 100px;
+      height: 100px;
+    }
+  
+    .item img {
+      width: 100px; 
+      height: 100px; 
+      object-fit: cover;
+    }
+
+    .header-content .nav
+    {
+      justify-content: center;
+      text-align: center;
+      width: 90px;
+      margin-left: 110px;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .previmg {
+      width: 200px;
+      height: 200px;
+    }
+    .summaryText {
+      text-align: center;
+    }
+
+    .summary{
+      display: block;
+      text-align: center;
+    }
+    
+    .header-content
+    {
+      text-align: center;
+    }
+
+    .project .projpix {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .project .projpix .item {
+      background: lightgray;
+      border: 1px solid black;
+      margin: 20px;
+    }
+  
+    .item {
+      border: 10px;
+      width: 100px;
+      height: 100px;
+    }
+  
+    .item img {
+      width: 100px; 
+      height: 100px; 
+      object-fit: cover;
+    }
+
+    .header-content .nav
+    {
+      justify-content: center;
+      text-align: center;
+      width: 90px;
+      margin-left: 110px;
+    }
   }
